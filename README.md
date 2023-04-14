@@ -9,13 +9,13 @@ Dmain Name (can purchase from AWS)
 
 1) Log in to aws console and ceate new S3 bucket:
 
-name: jjkkexpress.online (it should be smililar to your Dmain Nsme)
+   name: jjkkexpress.online (it should be smililar to your Dmain Nsme)
 
-select acls enable
+   select acls enable
 
-region: US East 2
+   region: US East 2
 
-uncheck block public access
+   uncheck block public access
 
 
 2) upload website codes to the newly created bucket
@@ -48,14 +48,13 @@ uncheck block public access
 http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com
 
 
-
-**Create DNS zone and records
+**II. Create DNS zone and records
 
 6) Create hosted zone similar to S3 bucket
 
 7) Create A record as jjkkexpress.online
 
-destination : S3 bucket URL (http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com)
+   destination : S3 bucket URL (http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com)
 
 8) Copy name servers records from newly created zone and update in the system from where purchased the Domain Name  (optional if DN not purchsed from AWS)
 update name servers 
