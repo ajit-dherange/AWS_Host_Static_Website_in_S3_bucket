@@ -1,10 +1,11 @@
 # AWS_Host_Static_Website_in_S3_bucket
 
 **Preisite:
+
 Dmain Name (can purchase from AWS)
 
 
-** I. Create Static Website
+**I. Create Static Website
 
 1) Log in to aws console and ceate new S3 bucket:
 
@@ -24,8 +25,10 @@ uncheck block public access
 3) properties - enable static web site hosting
 
 4) permission - add bucket policy
+
+   aws s3 static site policy :
+   
 ```ruby
-aws s3 static site policy :
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -45,6 +48,7 @@ aws s3 static site policy :
 http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com
 
 
+
 **Create DNS zone and records
 
 6) Create hosted zone similar to S3 bucket
@@ -57,9 +61,13 @@ destination : S3 bucket URL (http://jjkkexpress.online.s3-website.us-east-2.amaz
 update name servers 
 
 ns-687.awsdns-21.net
+
 ns-329.awsdns-41.com
+
 ns-1399.awsdns-46.org
+
 ns-1862.awsdns-40.co.uk
+
 
 9) Wait few minutes to get DNS populated
 
