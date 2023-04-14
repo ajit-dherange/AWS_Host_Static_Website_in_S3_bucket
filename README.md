@@ -2,7 +2,7 @@
 
 ### Pre-requiaite:
 
-Dmain Name (canbe purchased from AWS)
+Dmain Name (can be purchased from AWS)
 
 
 ## I. Create Static Website
