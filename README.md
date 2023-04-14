@@ -1,11 +1,11 @@
 # AWS_Host_Static_Website_in_S3_bucket
 
-**Preisite:
+## Preisite:
 
 Dmain Name (can purchase from AWS)
 
 
-**I. Create Static Website
+## I. Create Static Website
 
 1) Log in to aws console and ceate new S3 bucket:
 
@@ -48,7 +48,7 @@ Dmain Name (can purchase from AWS)
 http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com
 
 
-**II. Create DNS zone and records
+## II. Create DNS zone and records
 
 6) Create hosted zone similar to S3 bucket
 
