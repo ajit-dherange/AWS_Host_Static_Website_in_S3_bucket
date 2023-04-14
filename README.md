@@ -1,8 +1,8 @@
 # AWS_Host_Static_Website_in_S3_bucket
 
-## Preisite:
+### Pre-requiaite:
 
-Dmain Name (can purchase from AWS)
+Dmain Name (canbe purchased from AWS)
 
 
 ## I. Create Static Website
@@ -59,13 +59,13 @@ http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com
 8) Copy name servers records from newly created zone and update in the system from where purchased the Domain Name  (optional if DN not purchsed from AWS)
 update name servers 
 
-ns-687.awsdns-21.net
+   ns-687.awsdns-21.net
 
-ns-329.awsdns-41.com
+   ns-329.awsdns-41.com
 
-ns-1399.awsdns-46.org
-
-ns-1862.awsdns-40.co.uk
+   ns-1399.awsdns-46.org
+ 
+   ns-1862.awsdns-40.co.uk
 
 
 9) Wait few minutes to get DNS populated
