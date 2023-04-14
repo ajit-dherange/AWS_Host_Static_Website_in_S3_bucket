@@ -62,8 +62,7 @@ http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com
 
    destination : S3 bucket URL (http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com)
 
-8) Copy name servers records from newly created zone and update in the system from where purchased the Domain Name  (optional if DN not purchsed from AWS)
-update name servers 
+8) Copy name servers records from newly created hosted zone and update it in the system from where purchased the Domain Name (ignore this step if DN purchsed from AWS)
 
    ns-687.awsdns-21.net
 
@@ -74,7 +73,7 @@ update name servers
    ns-1862.awsdns-40.co.uk
 
 
-9) Wait few minutes to get DNS populated
+9) Wait for few minutes to get DNS populated
 
 10) Test site is accessible from outside by accessing URL http://jjkkexpress.online
 
