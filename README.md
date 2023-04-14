@@ -1,6 +1,6 @@
 # AWS_Host_Static_Website_in_S3_bucket
 
-### Pre-requiaite:
+### Pre-requisite:
 
 Dmain Name (can be purchased from AWS)
 
@@ -18,11 +18,17 @@ Dmain Name (can be purchased from AWS)
    uncheck block public access
 
 
-2) upload website codes to the newly created bucket
+2) Upload website codes (all folders & files) to the newly created bucket (download attached "static-website-example-master.zip" file to your desktop)
 
    allow public access
    
-3) properties - enable static web site hosting
+3) properties - 
+
+   enable static web site hosting
+   
+   index page - index.html
+   
+   erroe page - error.html
 
 4) permission - add bucket policy
 
@@ -43,7 +49,7 @@ Dmain Name (can be purchased from AWS)
 }
 ```
 
-5) Goto properties and copy website URL and browse
+5) Goto properties again, copy website URL and browse it
 
 http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com
 
