@@ -7,7 +7,7 @@ Dmain Name (can be purchased from AWS)
 
 ## I. Create Static Website
 
-1) Log in to aws console and ceate new S3 bucket:
+1) Log on to aws console and ceate new S3 bucket:
 
    name: jjkkexpress.online (it should be smililar to your Dmain Nsme)
 
@@ -22,7 +22,7 @@ Dmain Name (can be purchased from AWS)
 
    allow public access
    
-3) properties - 
+3) Go to bucket properties 
 
    enable static web site hosting
    
@@ -30,7 +30,7 @@ Dmain Name (can be purchased from AWS)
    
    erroe page - error.html
 
-4) permission - add bucket policy
+4) Go to permission and add below bucket policy
 
    aws s3 static site policy :
    
