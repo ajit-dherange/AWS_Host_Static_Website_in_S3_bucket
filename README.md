@@ -9,7 +9,7 @@ Dmain Name (can be purchased from AWS)
 
 1) Log on to aws console and ceate new S3 bucket:
 
-   name: jjkkexpress.online (it should be smililar to your Dmain Nsme)
+   name: jjkkexpress.online (it should be smililar to your Dmain Name)
 
    select acls enable
 
@@ -28,13 +28,13 @@ Dmain Name (can be purchased from AWS)
    
    index page - index.html
    
-   erroe page - error.html
+   error page - error.html
 
 4) Go to permission and add below bucket policy
 
    aws s3 static site policy :
    
-```ruby
+```
 {
     "Version": "2012-10-17",
     "Statement": [
