@@ -83,7 +83,8 @@ Note: Delete all resources created on Azure as soon as test complete to avoid ch
 
 # 2. Hosting Internal HTTPS Static Websites with ALB, S3 and PrivateLink
 
-This solution leverages your existing private connection to the VPC and an Internal ALB to present the TLS certificate of the custom S3 bucket domain to the end-user. The ALB leverages AWS Certificate Manager (ACM) to present a valid certificate for the end-user, while maintaining a secure TLS connection to the trusted Amazon S3 VPC Endpoint. This enables the use of custom domain names for your static website.
+This solution leverages your existing private connection to the VPC and an Internal ALB to present the TLS certificate of the custom S3 bucket domain to the end-user. 
+The ALB leverages AWS Certificate Manager (ACM) to present a valid certificate for the end-user, while maintaining a secure TLS connection to the trusted Amazon S3 VPC Endpoint. This enables the use of custom domain names for your static website.
 
 ### Prerequisites:
 
@@ -187,7 +188,8 @@ This solution leverages your existing private connection to the VPC and an Inter
 
 ### Step 4: Configure extra listener rules
 
-The Amazon S3 PrivateLink Endpoint is a **REST API Endpoint**, which means that trailing slash requests will return XML directory listings by default. To work around this, you’ll create a redirect rule to point all requests ending in a trailing slash to index.html.
+The Amazon S3 PrivateLink Endpoint is a **REST API Endpoint**, which means that trailing slash requests will return XML directory listings by default. 
+To work around this, you’ll create a redirect rule to point all requests ending in a trailing slash to index.html.
 
 1. Navigate to your Internal ALB. Select it, and open the “Listeners” tab.
    
@@ -210,10 +212,14 @@ The Amazon S3 PrivateLink Endpoint is a **REST API Endpoint**, which means that 
 10. Select “Save” in the top-right corner.Screenshot of the ALB Listener rules with options populated as described above
 
 ### Step 5: Configure your DNS and test your ALB
-Configure your on-premises or private DNS entries to point to the Internal ALB. You can use Route53 private hosted zones (PHZs) to set up a private alias record, and associate the PHZ with your VPC. You can also forward inbound DNS queries from on-premises to your VPC.
+Configure your on-premises or private DNS entries to point to the Internal ALB. 
+You can use Route53 private hosted zones (PHZs) to set up a private alias record, and associate the PHZ with your VPC. 
+You can also forward inbound DNS queries from on-premises to your VPC.
 
 ### Step 6: Test your ALB
-You must use a resource with private access to your VPC to reach the Internal ALB. Connect to your resource and try navigating to your new private DNS entry. If you only have console access to your resource, then you can also use a cURL command to validate the private static website.
+You must use a resource with private access to your VPC to reach the Internal ALB. 
+Connect to your resource and try navigating to your new private DNS entry. 
+If you only have console access to your resource, then you can also use a cURL command to validate the private static website.
 
 ### Cleanup
 To clean up, you can delete or revert the resources created in this guide in the following order:
