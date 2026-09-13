@@ -49,7 +49,7 @@ Dmain Name (can be purchased from AWS)
 }
 ```
 
-5) Goto properties again, copy website URL and browse it
+5) Goto properties again, copy website URL from Bucket website endpoint (Static website hosting) and browse it
 
 http://jjkkexpress.online.s3-website.us-east-2.amazonaws.com
 
